@@ -1,0 +1,2278 @@
+{
+  "intents": [
+    {
+      "intent": "Book_tickets",
+      "examples": [
+        {
+          "text": "book movie tickets"
+        },
+        {
+          "text": "I want to go to movies with my friends"
+        },
+        {
+          "text": "I want to see the list of movies"
+        },
+        {
+          "text": "make movie reservations"
+        },
+        {
+          "text": "reserve some seats for a movie"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "confirmation",
+      "examples": [
+        {
+          "text": "No"
+        },
+        {
+          "text": "Ok"
+        },
+        {
+          "text": "Yes"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "Good Afternoon"
+        },
+        {
+          "text": "Good Evening"
+        },
+        {
+          "text": "Good Morning"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hey"
+        },
+        {
+          "text": "Hi"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "languages",
+      "examples": [
+        {
+          "text": "English"
+        },
+        {
+          "text": "Hindi"
+        },
+        {
+          "text": "Telugu"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "meal_enquiry",
+      "examples": [
+        {
+          "text": "meal list"
+        },
+        {
+          "text": "Meals"
+        },
+        {
+          "text": "Show me all the meals"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "ThankYou",
+      "examples": [
+        {
+          "text": "Thanks!"
+        },
+        {
+          "text": "Thanks a lot!"
+        },
+        {
+          "text": "Thank you"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "cinema-hall",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Cinepolis, Ashima Mall",
+          "synonyms": [
+            "Bhopal cinema hall",
+            "cinema hall",
+            "cinepolis ",
+            "multiplex"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "INOX, C21 Mall",
+          "synonyms": [
+            "c21",
+            "cinema hall",
+            "inox"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "PVR, Aura Mall",
+          "synonyms": [
+            "Bhopal cinema hall",
+            "cinema hall",
+            "multiplex",
+            "PVR"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "confirmation",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "No",
+          "synonyms": [
+            "n",
+            "no"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "OK",
+          "synonyms": [
+            "k",
+            "ok"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Yes",
+          "synonyms": [
+            "y",
+            "yes"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Good Afternoon",
+          "synonyms": [
+            "afternoon",
+            "aftnoon",
+            "ga",
+            "gud aftnoon"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Evening",
+          "synonyms": [
+            "evening",
+            "evng",
+            "ge",
+            "gud evng"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Morning",
+          "synonyms": [
+            "gm",
+            "gud mrng",
+            "morning",
+            "mrng"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "languages",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "English",
+          "synonyms": [
+            "e",
+            "eng"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Hindi",
+          "synonyms": [
+            "h",
+            "hin"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Telugu",
+          "synonyms": [
+            "t",
+            "tel"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "meals",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Butter Popcorn",
+          "synonyms": [
+            "butter pop",
+            "popcorn"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Caramel Popcorn",
+          "synonyms": [
+            "caramel pop",
+            "popcorn"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Cheese Popcorn",
+          "synonyms": [
+            "cheese pop",
+            "popcorn"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Nachos",
+          "synonyms": [
+            "nachos"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Nothing",
+          "synonyms": [
+            "none",
+            "nothing"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Pan Pizza",
+          "synonyms": [
+            "pizza"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "movie",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "movie",
+          "synonyms": [
+            "cinema",
+            "dramas",
+            "film",
+            "movies",
+            "screenplay"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "movie-name",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Avengers:Endgame",
+          "synonyms": [
+            "avenger",
+            "Avengers",
+            "Avengers: Infinity War",
+            "inhumans",
+            "ultimates"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Spider-Man: Homecoming",
+          "synonyms": [
+            "avnegers",
+            "inhumans",
+            "spider man",
+            "Spider-Man",
+            "ultimates"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "The Dark Knight",
+          "synonyms": [
+            "Batman",
+            "superman",
+            "ultimates"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "The Lion King",
+          "synonyms": [
+            "adventure",
+            "fantasy",
+            "lion king"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "payment",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Cash",
+          "synonyms": [
+            "money"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Credit/Debit card",
+          "synonyms": [
+            "card",
+            "credit",
+            "debit"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Net Banking",
+          "synonyms": [
+            "net"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-currency",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_1_1606134748227",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1606134471392",
+      "context": {
+        "seats": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_10_1606134471394"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please enter/select the preferred time of watching..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Preferred Time...",
+            "options": [
+              {
+                "label": "8pm",
+                "value": {
+                  "input": {
+                    "text": "8pm"
+                  }
+                }
+              },
+              {
+                "label": "10pm",
+                "value": {
+                  "input": {
+                    "text": "10pm"
+                  }
+                }
+              },
+              {
+                "label": "12am",
+                "value": {
+                  "input": {
+                    "text": "12am"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_7_1606625080284",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1606625080284",
+      "previous_sibling": "handler_1_1606625080284"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1606729343217",
+      "context": {
+        "meals_Nothing": "@meals:Nothing"
+      },
+      "conditions": "@meals:Nothing",
+      "event_name": "input",
+      "dialog_node": "handler_10_1606729343218"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1606134417027",
+      "context": {
+        "time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_1_1606134417028"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1606148418622",
+      "context": {
+        "currency": "@sys-currency"
+      },
+      "conditions": "@sys-currency",
+      "event_name": "input",
+      "dialog_node": "handler_1_1606148418623"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1606625080284",
+      "context": {
+        "time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_1_1606625080284"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1606643426145",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1606643426165",
+      "previous_sibling": "handler_7_1606643426165"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here is the meal list if you choose to add it to your ticket"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Meals",
+            "options": [
+              {
+                "label": "Nachos",
+                "value": {
+                  "input": {
+                    "text": "Nachos"
+                  }
+                }
+              },
+              {
+                "label": "Butter Popcorn ",
+                "value": {
+                  "input": {
+                    "text": "Butter Popcorn "
+                  }
+                }
+              },
+              {
+                "label": "Caramel Popcorn",
+                "value": {
+                  "input": {
+                    "text": "Caramel Popcorn"
+                  }
+                }
+              },
+              {
+                "label": "Cheese Popcorn ",
+                "value": {
+                  "input": {
+                    "text": "Cheese Popcorn "
+                  }
+                }
+              },
+              {
+                "label": "Pan Pizza",
+                "value": {
+                  "input": {
+                    "text": "Pan Pizza"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_3_1606728165807",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1606728165820",
+      "previous_sibling": "handler_8_1606728165820"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1606730089110",
+      "context": {
+        "languages": "@languages"
+      },
+      "conditions": "@languages",
+      "event_name": "input",
+      "dialog_node": "handler_1_1606730089112"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1606134361283",
+      "context": {
+        "date": "@sys-date"
+      },
+      "conditions": "@sys-date",
+      "event_name": "input",
+      "dialog_node": "handler_2_1606134361284"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please enter/select the preferred time of watching..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Preferred Time...",
+            "options": [
+              {
+                "label": "5pm",
+                "value": {
+                  "input": {
+                    "text": "5pm"
+                  }
+                }
+              },
+              {
+                "label": "6pm",
+                "value": {
+                  "input": {
+                    "text": "6pm"
+                  }
+                }
+              },
+              {
+                "label": "9pm",
+                "value": {
+                  "input": {
+                    "text": "9pm"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_4_1606625082615",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1606625082616",
+      "previous_sibling": "handler_6_1606625082616"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Enter the quantity for the meals you chose.."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Qty",
+            "options": [
+              {
+                "label": "1",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "2",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              },
+              {
+                "label": "3",
+                "value": {
+                  "input": {
+                    "text": "3"
+                  }
+                }
+              },
+              {
+                "label": "4",
+                "value": {
+                  "input": {
+                    "text": "4"
+                  }
+                }
+              },
+              {
+                "label": "5",
+                "value": {
+                  "input": {
+                    "text": "5"
+                  }
+                }
+              },
+              {
+                "label": "6",
+                "value": {
+                  "input": {
+                    "text": "6"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_1_1606728734880",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1606728734881",
+      "previous_sibling": "handler_3_1606728734881"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "You have not placed any meals to your ticket"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1606729343217",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1606729343218",
+      "previous_sibling": "handler_10_1606729343218"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please enter/select the preferred time of watching..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "title": "Preferred Time...",
+            "options": [
+              {
+                "label": "7pm",
+                "value": {
+                  "input": {
+                    "text": "7pm"
+                  }
+                }
+              },
+              {
+                "label": "9pm",
+                "value": {
+                  "input": {
+                    "text": "9pm"
+                  }
+                }
+              },
+              {
+                "label": "10pm",
+                "value": {
+                  "input": {
+                    "text": "10pm"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_9_1606134417027",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1606134417028",
+      "previous_sibling": "handler_1_1606134417028"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Which type of seat do you choose?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Seat Type",
+            "options": [
+              {
+                "label": "Classic - Rs 150",
+                "value": {
+                  "input": {
+                    "text": "Rs150"
+                  }
+                }
+              },
+              {
+                "label": "Prime - Rs 180",
+                "value": {
+                  "input": {
+                    "text": "Rs180"
+                  }
+                }
+              },
+              {
+                "label": "Recliner - Rs 210",
+                "value": {
+                  "input": {
+                    "text": "Rs210"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_4_1606148418622",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1606148418623",
+      "previous_sibling": "handler_1_1606148418623"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Which type of seat do you choose?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Seat Type",
+            "options": [
+              {
+                "label": "Classic - Rs 180",
+                "value": {
+                  "input": {
+                    "text": "Rs180"
+                  }
+                }
+              },
+              {
+                "label": "Prime - Rs 210",
+                "value": {
+                  "input": {
+                    "text": "Rs210"
+                  }
+                }
+              },
+              {
+                "label": "Recliner - Rs 240",
+                "value": {
+                  "input": {
+                    "text": "Rs240"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_3_1606623220688",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1606623220689",
+      "previous_sibling": "handler_7_1606623220689"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1606623226193",
+      "context": {
+        "currency": "@sys-currency"
+      },
+      "conditions": "@sys-currency",
+      "event_name": "input",
+      "dialog_node": "handler_3_1606623226194"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1606728734880",
+      "context": {
+        "quantity": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_3_1606728734881"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "source": "https://image.tmdb.org/t/p/original/2TMCurQcQjYOPAnnbnd550cRfMH.jpg",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "slot_10_1606133848952",
+      "conditions": "@movie-name:(The Lion King)",
+      "event_name": "filled",
+      "dialog_node": "handler_4_1606151479819",
+      "previous_sibling": "handler_8_1606151437357"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1606623223695",
+      "context": {
+        "currency": "@sys-currency"
+      },
+      "conditions": "@sys-currency",
+      "event_name": "input",
+      "dialog_node": "handler_4_1606623223696"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Which type of seat do you choose?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Seat Type",
+            "options": [
+              {
+                "label": "Classic - Rs 210",
+                "value": {
+                  "input": {
+                    "text": "Rs210"
+                  }
+                }
+              },
+              {
+                "label": "Prime - Rs 240",
+                "value": {
+                  "input": {
+                    "text": "Rs240"
+                  }
+                }
+              },
+              {
+                "label": "Recliner - Rs 270",
+                "value": {
+                  "input": {
+                    "text": "Rs270"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_4_1606623226193",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1606623226194",
+      "previous_sibling": "handler_3_1606623226194"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please proceed and pay through..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Payment option",
+            "options": [
+              {
+                "label": "Net Banking",
+                "value": {
+                  "input": {
+                    "text": "net banking"
+                  }
+                }
+              },
+              {
+                "label": "Credit/Debit card",
+                "value": {
+                  "input": {
+                    "text": "credit/debit card"
+                  }
+                }
+              },
+              {
+                "label": "Cash",
+                "value": {
+                  "input": {
+                    "text": "cash"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_6_1606730649768",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1606730649785",
+      "previous_sibling": "handler_9_1606730649785"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1606133848952",
+      "context": {
+        "name": "@movie-name"
+      },
+      "conditions": "@movie-name",
+      "event_name": "input",
+      "dialog_node": "handler_5_1606133848962"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Which type of do you choose?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Seat Type",
+            "options": [
+              {
+                "label": "Classic - Rs 160",
+                "value": {
+                  "input": {
+                    "text": "Rs160"
+                  }
+                }
+              },
+              {
+                "label": "Prime - Rs 190",
+                "value": {
+                  "input": {
+                    "text": "Rs190"
+                  }
+                }
+              },
+              {
+                "label": "Recliner - Rs 230",
+                "value": {
+                  "input": {
+                    "text": "Rs230"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_6_1606623223695",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1606623223696",
+      "previous_sibling": "handler_4_1606623223696"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Decide in which language you want to see the movie.."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Language",
+            "options": [
+              {
+                "label": "English",
+                "value": {
+                  "input": {
+                    "text": "English"
+                  }
+                }
+              },
+              {
+                "label": "Hindi",
+                "value": {
+                  "input": {
+                    "text": "Hindi"
+                  }
+                }
+              },
+              {
+                "label": "Telugu",
+                "value": {
+                  "input": {
+                    "text": "Telugu"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_10_1606730089110",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1606730089112",
+      "previous_sibling": "handler_1_1606730089112"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "There are only 4 movies available (Avengers: Endgame, The Dark Knight, The Lion King and Spider-Man: Homecoming). Please enter or select the name of the movie you would like to watch ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Movie",
+            "options": [
+              {
+                "label": "Avengers: Endgame",
+                "value": {
+                  "input": {
+                    "text": "Avengers: Endgame"
+                  }
+                }
+              },
+              {
+                "label": "The Dark Knight",
+                "value": {
+                  "input": {
+                    "text": "The Dark Knight"
+                  }
+                }
+              },
+              {
+                "label": "The Lion King",
+                "value": {
+                  "input": {
+                    "text": "The Lion King"
+                  }
+                }
+              },
+              {
+                "label": "Spider-Man: Homecoming",
+                "value": {
+                  "input": {
+                    "text": "Spider-Man: Homecoming"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_10_1606133848952",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1606133848962",
+      "previous_sibling": "handler_5_1606133848962"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please enter the location of your preference in  Bhopal"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Cinema Hall Location",
+            "options": [
+              {
+                "label": "PVR, Aura Mall",
+                "value": {
+                  "input": {
+                    "text": "PVR, Aura Mall"
+                  }
+                }
+              },
+              {
+                "label": "Cinepolis, Ashima Mall",
+                "value": {
+                  "input": {
+                    "text": "Cinepolis, Ashima Mall"
+                  }
+                }
+              },
+              {
+                "label": "INOX, C21 Mall",
+                "value": {
+                  "input": {
+                    "text": "INOX, C21 Mall"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_9_1606134196721",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1606134196722",
+      "previous_sibling": "handler_8_1606134196722"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "source": "http://www.justinkownacki.com/wp-content/uploads/2019/04/Avengers-Endgame-Movie-Poster-Vertical.jpg",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "slot_10_1606133848952",
+      "conditions": "@movie-name:(Avengers:Endgame)",
+      "event_name": "filled",
+      "dialog_node": "handler_6_1606151344470",
+      "previous_sibling": "handler_6_1606133848962"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1606625082615",
+      "context": {
+        "time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_6_1606625082616"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_10_1606145715185",
+      "event_name": "input",
+      "dialog_node": "handler_7_1606145715197"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "source": "http://image.tmdb.org/t/p/original/vbsF7y7ZxhbqBGOTKpukUlSLs9l.jpg",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "slot_10_1606133848952",
+      "conditions": "@movie-name:(Spider-Man: Homecoming)",
+      "event_name": "filled",
+      "dialog_node": "handler_7_1606151524831",
+      "previous_sibling": "handler_4_1606151479819"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1606623220688",
+      "context": {
+        "currency": "@sys-currency"
+      },
+      "conditions": "@sys-currency",
+      "event_name": "input",
+      "dialog_node": "handler_7_1606623220689"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_2_1606643426145",
+      "event_name": "input",
+      "dialog_node": "handler_7_1606643426165"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1606134196721",
+      "context": {
+        "location": "@cinema-hall"
+      },
+      "conditions": "@cinema-hall",
+      "event_name": "input",
+      "dialog_node": "handler_8_1606134196722"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please enter the number of seats to be booked..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "No. of seats",
+            "options": [
+              {
+                "label": "1",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "2",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              },
+              {
+                "label": "3",
+                "value": {
+                  "input": {
+                    "text": "3"
+                  }
+                }
+              },
+              {
+                "label": "4",
+                "value": {
+                  "input": {
+                    "text": "4"
+                  }
+                }
+              },
+              {
+                "label": "5",
+                "value": {
+                  "input": {
+                    "text": "5"
+                  }
+                }
+              },
+              {
+                "label": "6",
+                "value": {
+                  "input": {
+                    "text": "6"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_5_1606134471392",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1606134471394",
+      "previous_sibling": "handler_10_1606134471394"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1606145715185",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1606145715197",
+      "previous_sibling": "handler_7_1606145715197"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "source": "https://is5-ssl.mzstatic.com/image/thumb/Video118/v4/67/33/17/673317f2-24ae-6432-40cb-dfc6b51eef1e/source/1200x630bb.jpg",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "slot_10_1606133848952",
+      "conditions": "@movie-name:(The Dark Knight)",
+      "event_name": "filled",
+      "dialog_node": "handler_8_1606151437357",
+      "previous_sibling": "handler_6_1606151344470"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1606728165807",
+      "context": {
+        "meals": "@meals"
+      },
+      "conditions": "@meals",
+      "event_name": "input",
+      "dialog_node": "handler_8_1606728165820"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please enter/select the preferred date of booking..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Preferred date",
+            "options": [
+              {
+                "label": "Today",
+                "value": {
+                  "input": {
+                    "text": "Today"
+                  }
+                }
+              },
+              {
+                "label": "Tomorrow",
+                "value": {
+                  "input": {
+                    "text": "Tomorrow"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_2_1606134361283",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1606134361284",
+      "previous_sibling": "handler_2_1606134361284"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1606730649768",
+      "context": {
+        "payment": "@payment"
+      },
+      "conditions": "@payment",
+      "event_name": "input",
+      "dialog_node": "handler_9_1606730649785"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_6_1606133250723"
+      },
+      "conditions": "#Greetings || @greetings",
+      "dialog_node": "node_1_1606132977882",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please come again if you want to watch movies and be sure to wear masks and carry a hand sanitizer to prevent the COVID-19 coronavirus."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#ThankYou",
+      "dialog_node": "node_1_1606134748227",
+      "previous_sibling": "node_3_1606731844845"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "deleted": "<?context.remove('payment')?>",
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1606730420252",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1606134748227"
+      },
+      "conditions": "true",
+      "dialog_node": "node_1_1606731125501"
+    },
+    {
+      "type": "frame",
+      "title": "Payment",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You have paid the amount for the ticket by $payment. Your tickets will be send to you soon."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "anything_else",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1606730420252",
+      "previous_sibling": "node_6_1606642639225"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Write meals/meal list to see the list.."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1606133720496",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_3_1606728133132"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_2_1606735382971",
+      "previous_sibling": "node_8_1606735969872"
+    },
+    {
+      "type": "frame",
+      "title": "Movie Booking Details",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your request for booking seats for the $name movie in $languages on $date at $time for $seats people at $location has been placed."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#Book_tickets",
+      "dialog_node": "node_3_1606133720496",
+      "previous_sibling": "node_1_1606132977882"
+    },
+    {
+      "type": "frame",
+      "title": "Meal details",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You have placed an order of $quantity $meals to your ticket."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#meal_enquiry",
+      "dialog_node": "node_3_1606728133132",
+      "previous_sibling": "node_3_1606133720496"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You have cancelled the ticket booking. Please come again if you want to watch movies and be sure to wear masks and carry a hand sanitizer to prevent the COVID-19 coronavirus."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@confirmation:No",
+      "dialog_node": "node_3_1606731844845",
+      "previous_sibling": "node_2_1606730420252"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "How can I help you? I can help you book movie tickets"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1606132977882",
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#Greetings",
+      "dialog_node": "node_6_1606133250723",
+      "previous_sibling": "response_4_1606145427766"
+    },
+    {
+      "type": "standard",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@confirmation || #confirmation",
+      "dialog_node": "node_6_1606642639225",
+      "previous_sibling": "node_3_1606728133132"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "deleted": "<?context.remove('name')?><?context.remove('date')?><?context.remove('location')?><?context.remove('seats')?><?context.remove('languages')?>",
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1606133720496",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1606735382971"
+      },
+      "conditions": "true",
+      "dialog_node": "node_8_1606735969872"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "deleted": "<?context.remove('quantity')?><?context.remove('meals')?><?context.remove('meals_Nothing')>",
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1606728133132",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_6_1606642639225"
+      },
+      "conditions": "true",
+      "dialog_node": "node_8_1606736219654"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Morning!!"
+              },
+              {
+                "text": "Hello"
+              },
+              {
+                "text": "Greetings"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1606132977882",
+      "conditions": "@greetings:(Good Morning)",
+      "dialog_node": "response_10_1606145299345"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you. Your request for booking seats for the $name movie on $date at $time for $seats people at $location has been completed. Rs.$price is the price for each seat. Tickets will be send to you soon."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1606133720496",
+      "disabled": true,
+      "conditions": "$moviename",
+      "dialog_node": "response_1_1606133787490",
+      "previous_sibling": "slot_5_1606134471392"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "How can I help you? I can help you book movie tickets"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1606133250723",
+      "disabled": true,
+      "conditions": "@movie:movie",
+      "dialog_node": "response_2_1606133539206",
+      "previous_sibling": "slot_10_1606145715185"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Afternoon!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1606132977882",
+      "conditions": "@greetings:(Good Afternoon)",
+      "dialog_node": "response_2_1606145347510",
+      "previous_sibling": "response_10_1606145299345"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1606642639225",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1606731844845"
+      },
+      "conditions": "@confirmation:No",
+      "dialog_node": "response_3_1606732133369",
+      "previous_sibling": "response_7_1606644612518"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hey Hello!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1606132977882",
+      "conditions": "anything_else",
+      "dialog_node": "response_4_1606145427766",
+      "previous_sibling": "response_9_1606145369832"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You have confirmed the booking."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1606642639225",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1606730420252"
+      },
+      "conditions": "@confirmation:Yes",
+      "dialog_node": "response_7_1606644612518",
+      "previous_sibling": "response_9_1606644155942"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You have placed an order of $quantity $meals to your ticket."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1606728133132",
+      "disabled": true,
+      "conditions": "",
+      "dialog_node": "response_7_1606733897865",
+      "previous_sibling": "node_8_1606736219654"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Evening!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1606132977882",
+      "conditions": "@greetings:(Good Evening)",
+      "dialog_node": "response_9_1606145369832",
+      "previous_sibling": "response_2_1606145347510"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Click Y/N here for confirming..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Confirmation",
+            "options": [
+              {
+                "label": "Yes",
+                "value": {
+                  "input": {
+                    "text": "Yes"
+                  }
+                }
+              },
+              {
+                "label": "No",
+                "value": {
+                  "input": {
+                    "text": "No"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_6_1606642639225",
+      "conditions": "@confirmation:OK",
+      "dialog_node": "response_9_1606644155942",
+      "previous_sibling": "slot_2_1606643426145"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please proceed and pay through..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Payment Option",
+            "options": [
+              {
+                "label": "Net Banking",
+                "value": {
+                  "input": {
+                    "text": "net Banking"
+                  }
+                }
+              },
+              {
+                "label": "Credit/Debit card",
+                "value": {
+                  "input": {
+                    "text": "credit/debit card"
+                  }
+                }
+              },
+              {
+                "label": "Cash",
+                "value": {
+                  "input": {
+                    "text": "cash"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1606730420252",
+      "disabled": true,
+      "dialog_node": "response_9_1606730623647",
+      "previous_sibling": "slot_6_1606730649768"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1606133720496",
+      "variable": "$name",
+      "dialog_node": "slot_10_1606133848952",
+      "previous_sibling": "node_2_1606735382971"
+    },
+    {
+      "type": "slot",
+      "parent": "node_6_1606133250723",
+      "dialog_node": "slot_10_1606145715185"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1606133720496",
+      "variable": "$languages",
+      "dialog_node": "slot_10_1606730089110",
+      "previous_sibling": "slot_4_1606623226193"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1606728133132",
+      "variable": "$quantity",
+      "dialog_node": "slot_1_1606728734880",
+      "previous_sibling": "slot_3_1606728165807"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1606133720496",
+      "variable": "$date",
+      "dialog_node": "slot_2_1606134361283",
+      "previous_sibling": "slot_10_1606730089110"
+    },
+    {
+      "type": "slot",
+      "parent": "node_6_1606642639225",
+      "dialog_node": "slot_2_1606643426145"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1606133720496",
+      "variable": "$currency",
+      "conditions": "@movie-name:(Avengers:Endgame)",
+      "dialog_node": "slot_3_1606623220688",
+      "previous_sibling": "slot_4_1606148418622"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1606728133132",
+      "variable": "$meals",
+      "dialog_node": "slot_3_1606728165807",
+      "previous_sibling": "response_7_1606733897865"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1606728133132",
+      "variable": "$meals_Nothing",
+      "conditions": "@meals:Nothing",
+      "dialog_node": "slot_3_1606729343217",
+      "previous_sibling": "slot_1_1606728734880"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1606133720496",
+      "variable": "$currency",
+      "conditions": "@movie-name:(The Lion King)",
+      "dialog_node": "slot_4_1606148418622",
+      "previous_sibling": "slot_10_1606133848952"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1606133720496",
+      "variable": "$currency",
+      "conditions": "@movie-name:(The Dark Knight)",
+      "dialog_node": "slot_4_1606623226193",
+      "previous_sibling": "slot_6_1606623223695"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1606133720496",
+      "variable": "$time",
+      "conditions": "   @cinema-hall:(INOX, C21 Mall)",
+      "dialog_node": "slot_4_1606625082615",
+      "previous_sibling": "slot_7_1606625080284"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1606133720496",
+      "variable": "$seats",
+      "dialog_node": "slot_5_1606134471392",
+      "previous_sibling": "slot_4_1606625082615"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1606133720496",
+      "variable": "$currency",
+      "conditions": "@movie-name:(Spider-Man: Homecoming)",
+      "dialog_node": "slot_6_1606623223695",
+      "previous_sibling": "slot_3_1606623220688"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_2_1606730420252",
+      "variable": "$payment",
+      "dialog_node": "slot_6_1606730649768",
+      "previous_sibling": "node_1_1606731125501"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1606133720496",
+      "variable": "$time",
+      "conditions": "  @cinema-hall:(Cinepolis, Ashima Mall)",
+      "dialog_node": "slot_7_1606625080284",
+      "previous_sibling": "slot_9_1606134417027"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1606133720496",
+      "variable": "$location",
+      "dialog_node": "slot_9_1606134196721",
+      "previous_sibling": "slot_2_1606134361283"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1606133720496",
+      "variable": "$time",
+      "conditions": "@cinema-hall:(PVR, Aura Mall)",
+      "dialog_node": "slot_9_1606134417027",
+      "previous_sibling": "slot_9_1606134196721"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Welcome I am a movie ticketing bot capable of showing the list of movies, the show timings, their prices and availability of the seats."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "MovieTicketingBot",
+  "language": "en",
+  "description": ""
+}
